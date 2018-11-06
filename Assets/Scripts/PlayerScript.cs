@@ -80,7 +80,7 @@ public class PlayerScript : NetworkBehaviour
         UiUnitPanel.SetActive(false);
     }
 
-    //-----COMMANDS-----
+    //-----COMMANDS-----//
     [Command]
     public void CmdSetSquad(UnitType[] squad)
     {
@@ -109,9 +109,9 @@ public class PlayerScript : NetworkBehaviour
 
     }
 
-    //-----RPC-----
+    //-----RPC-----//
 
-    //-----SYNCVAR HOOK-----
+    //-----SYNCVAR HOOK-----//
     public void OnTimerChange(float timer)
     {
         if (!isLocalPlayer)
@@ -131,7 +131,7 @@ public class PlayerScript : NetworkBehaviour
         this.UiPhase.text = CurrentGamePhase.ToString();
     }
 
-    //-----START, UPDATE-----
+    //-----START, UPDATE-----//
 
     void Start()
     {
