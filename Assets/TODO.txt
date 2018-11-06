@@ -1,0 +1,26 @@
+Typ "GameSystem" klass som hanterar spelrundor och annat?
+	-Har en lista med samtliga units tillhörande alla spelare
+	-Movement phase: aktivera den unit som har lägst initiativ.
+	-Om två units som ägs av olika spelare har samma initiativ, rotera vilken spelare som får aktivera unit.
+	-När en unit använt upp alla sina moves (eller spelaren väljer att avsluta movement-phase?), aktivera nästa unit.
+	-När alla units gjort sina movement, gå vidare till action-phase.
+	-Action Phase: Aktivera den unit som har HÖGST initiativ, den kan nu skjuta på en (kanske vissa klasser kan skjuta på flera?) unit i dess field of view.
+	-skjuta: Alla units har DMG och hit-chance per skott. Kanske chans och/eller dmg går upp om man skjuter på en flankad unit (unit som inte har attacker i vision)?
+
+UI.
+	-visa info om aktiv unit (HP, movements kvar, initiativ, DMG + hit chance, abilities, equipments) i en gemensam panel.
+	-Visa aktiv fas.
+	-visa timer, hur lång tid man har på sig att genomföra sina moves.
+	-visa turordningen för varje fas, där man ser sina units (kan klicka på dom för att flytta kameran dit) och motståndarens units.
+	-motståndarens units går bara att klicka på om de är i FOV för tillfället.
+
+Idéer på klasser.
+	-Sniper: ganska låg initiativ, låg movement, låg hp, bra sight range, ett vapen som gör bra dmg med hög hit-chance, 1 skott. Har Scope-abilityn.
+	-Assault trooper: låg initiativ, medium movement, ganska hög hp, medium sight range, vapen som skjuter 2-3 ggr med medium dmg/hit-chance.
+	-Rogue: hög initiativ, hög movement, låg hp, medium sight range, vapen som skjuter 1-2 ggr med ganska låg dmg, bra hit chance. Extra bonus dmg av att flanka.
+
+Idéer på Abilities.
+	-Disengage: få 150%/200% fler movements denna runda, men skippa ActionPhase. 4(?) rundor CD, tillgänglig på alla klasser.
+	-Combat Reaction: unit kan använda några få movements under sin combat-runda. ingen CD(?) kostar movement(typ 30% mov för att få 15% mov i combat). tillgänglig på alla klasser.
+	-Scope: betala lite movements för att byta till Scope vision. Ser längre, men bara i en rak linje. Ingen CD, kostar movement. Tillgänglig på sniper.
+	-Reactive fire: efter att unit flyttat klart och aktiverat denna ability, så kommer den automatiskt skjuta om fiende kommer in i FOV. ingen CD, kostar movement (typ 50%). Assault trooper + sniper. Sniper kan endast använda den scoped.

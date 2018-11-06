@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - UIRoundTime
+  - UICurrentPhase
+  - UIEndTurnButton
+  - UIUnitLabel
+  - UIHpValue
+  - UIMoveValue
+  - UIHitChanceValue
+  - UIDmgValue
+  - UISightRangeValue
+  - UIInitiativeValue
+  - UIUnitPanel
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 2711577115
+    locked: 0
+  - name: HexBorder
+    uniqueID: 1310788509
+    locked: 0
+  - name: Obstacles
+    uniqueID: 1622110029
+    locked: 0
+  - name: MoveSelect
+    uniqueID: 856575117
+    locked: 0
+  - name: FogOfWar
+    uniqueID: 1368202229
+    locked: 0
+  - name: Units
+    uniqueID: 2781144863
+    locked: 0
+  - name: UI
+    uniqueID: 2503082517
+    locked: 0
