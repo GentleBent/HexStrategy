@@ -54,7 +54,7 @@ public abstract class AbstractUnit : NetworkBehaviour {
 
 
 
-    //-----SYNCVAR HOOKS------
+    //-----SYNCVAR HOOKS------//
     public void OnUnitChangeIsActivated(bool activated)
     {
         //Debug.Log(hasAuthority);
@@ -229,7 +229,7 @@ public abstract class AbstractUnit : NetworkBehaviour {
         }
         objectToMove.transform.position = end;
         this.isMoving = false;
-        fieldOfVisionTiles = gridscr.ClearFogNormalVision(transform.position, direction, 6);
+        fieldOfVisionTiles = gridscr.ClearFogNormalVision(transform.position, direction, BaseSightRange);
         LocalPlayer.HandleFogOfWarHide();
         if(IsActivated)
             SetMoveTiles();
@@ -270,7 +270,7 @@ public abstract class AbstractUnit : NetworkBehaviour {
         this.isMoving = false;
         this.isDisplayingRotations = false;
         this.isFacingRight = true;
-        this.HasInitialized = true; //will tell the GameManager that this has finnished running its start function.
+        this.HasInitialized = true; //GameManager waits for this to be true on all units before proceeding with initialization.
     }
 	
 	// Update is called once per frame

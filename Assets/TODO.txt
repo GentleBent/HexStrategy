@@ -1,3 +1,5 @@
+TODO: Skriv ny TODO. :) använd markdown istället, mycket som redan är implementerat under GameSystem och UI.
+
 Typ "GameSystem" klass som hanterar spelrundor och annat?
 	-Har en lista med samtliga units tillhörande alla spelare
 	-Movement phase: aktivera den unit som har lägst initiativ.

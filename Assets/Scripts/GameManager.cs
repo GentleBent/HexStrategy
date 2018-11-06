@@ -157,7 +157,7 @@ public class GameManager : NetworkManager
         return !temp.Any(unit => unit.HasInitialized == false || unit.HasReceivedAuthority == false);
     }
 
-    //-----SERVER CALLBACK-----
+    //-----SERVER CALLBACK-----//
     public override void OnServerAddPlayer(NetworkConnection con, short playerControllerId)
     {
         base.OnServerAddPlayer(con, playerControllerId);
@@ -166,7 +166,7 @@ public class GameManager : NetworkManager
 
 
 
-    //-----START/UPDATE-----
+    //-----START/UPDATE-----//
     void Start()
     {
         CurrentPhase = GamePhases.None;
